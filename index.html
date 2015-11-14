@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <title>Bukkit ChatColor Converter</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+
+    <style>
+        body {
+            font-family: Roboto;
+        }
+
+        .site-name {
+            font-weight: 300;
+            color: #333;
+            margin: 0;
+        }
+
+        .version-string {
+            font-weight: 300;
+            color: #777;
+            margin: 0;
+            font-size: 19px;
+        }
+
+        .version-string em {
+            font-size: 14px;
+            color: #ff2e46;
+            font-style: normal;
+        }
+
+        .wrapper {
+            width: 642px;
+            margin: auto;
+            padding-top: 70px;
+        }
+
+        .footnote {
+            margin-top: 50px;
+            padding-top: 20px;
+            font-size: 15px;
+            font-weight: 300;
+            color: #555;
+            border-top: 1px solid #ddd;
+            padding-bottom: 20px;
+        }
+
+        .footnote em {
+            font-size: 17px;
+            font-style: normal;
+            color: #ff2e46;
+        }
+
+        .footnote a:link,
+        .footnote a:visited {
+            color: #6497e4;
+        }
+
+        .github {
+            float: right;
+        }
+
+        #editor {
+            margin-top: 50px;
+        }
+
+        .note {
+            padding: 15px;
+            padding-top: 30px;
+            font-weight: 100;
+            font-size: 15px;
+            line-height: 1.5em;
+        }
+
+        .coloreditor-result .coloreditor-code {
+            border: 1px solid #d1cacd;
+            background: #FFFEFE;
+            padding: 12px;
+            min-height: 30px;
+            max-height: 150px;
+            overflow-y: scroll;
+        }
+
+        .coloreditor-code {
+            border: 1px solid rgb(209, 202, 205);
+            background: #FFFEFE;
+            padding: 12px;
+            min-height: 30px;
+            max-height: 150px;
+            overflow-y: scroll;
+        }
+
+        .coloreditor-editable {
+            min-height: 80px;
+            max-height: 150px;
+            overflow: scroll;
+            padding: 12px;
+            box-sizing: border-box;
+            background: #29160f;
+            color: #fff;
+            font-family: Arial;
+            font-size: 18px;
+            outline: none;
+            word-break: break-all;
+        }
+    </style>
+
+    <meta name="description" content="This tool makes it easy to convert bukkit color codes in to java readable ChatColor strings.">
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="site-name">ChatColor Converter</h1>
+        <h2 class="version-string">v1.0 <em>BETA</em></h2>
+
+        <div id="editor">
+          <p>Input:</p>
+          <div class="coloreditor-code" id="input" autocapitalize="off" autocorrect="off" contenteditable="true" spellcheck="false"></div>
+          <br />
+          <p>Result:</p>
+          <div class="coloreditor-editable" id="result" autocapitalize="off" autocorrect="off" spellcheck="false"></div>
+        </div>
+
+        <div class="note">
+            <p>Credit for design goes to <a href="https://twitter.com/pxl_panda">PxlPanda</a>!</p>
+        </div>
+
+        <div class="footnote">
+
+            <div class="github">
+                <a class="github-button" href="https://github.com/CdePanda/Minecraft-Color-Editor" data-icon="octicon-star" data-style="mega" data-count-href="/CdePanda/Minecraft-Color-Editor/stargazers" data-count-api="/repos/CdePanda/Minecraft-Color-Editor#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star CdePanda/Minecraft-Color-Editor on GitHub">Star</a>
+            </div>
+
+            Made by <a href="https://twitter.com/JoshK_01">JoshK_</a>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="color.js"></script>
+    <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+</body>
+</html>
